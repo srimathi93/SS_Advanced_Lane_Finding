@@ -12,7 +12,7 @@ I then import all the chess board images. I create empty arrays for object point
 
 
 
-![Undistorted Image]../camera_cal/undistorted_calibration5.jpg
+![Undistorted Image](./camera_cal/undistorted_calibration5.jpg)
 
 ### Pipeline (single images)
 
@@ -20,7 +20,7 @@ I then import all the chess board images. I create empty arrays for object point
 
 I then passed all the test images thorugh cal_undistort function which undistorts the image as well
 
-![Undistorted Image]../test_images/undistorted_test2.jpg
+![Undistorted Image](./test_images/undistorted_test*.jpg)
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
@@ -38,9 +38,6 @@ To create a final threshold binary image we first convert the image to a hls col
    
    I combine all the above functions into a bigger function called findedges
 
-
-
-![Binary Image]../test_images/g_mask1.jpg
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -61,7 +58,7 @@ The offset is set to 80 and the nx is set to 9
 I then verify that the above values work by plotting the perspective transforms.
 
 
-![Perspective Transformed Image]../test_images/transformed_test2.jpg
+![Perspective Transformed Image](./test_images/transformed_test*.jpg)
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
@@ -70,7 +67,7 @@ I then take the histogram of the bottom half final perspective transformed image
  
 
 
-![Polynomial Fittet Image]../test_images/binary_warped.jpg
+![Polynomial Fittet Image](./test_images/binary_warped.jpg)
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -80,7 +77,7 @@ I created the function measure_curvature_pixel similar as described in the class
 
 I then use the points detected on the left and right to draw a lane line and create a weighted image with the original image and the drawn polynomial.
 
-![Road_Plotted]../test_images/plotted_road.jpg
+![Road_Plotted](./test_images/plotted_road.jpg)
 
 ---
 
@@ -88,7 +85,7 @@ I then use the points detected on the left and right to draw a lane line and cre
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](../project_video_output)
+Here's a [link to my video result](./project_video_output.mp4)
 
 ---
 
